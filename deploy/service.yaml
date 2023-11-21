@@ -1,0 +1,29 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: simple-app
+  labels:
+    app: simple-app
+    app.kubernetes.io/component: simple-app
+    app.kubernetes.io/instance: simple-app
+    app.kubernetes.io/name: simple-app
+    app.kubernetes.io/part-of: simple-app
+    app.openshift.io/runtime-version: latest
+spec:
+  ipFamilies:
+    - IPv4
+  ports:
+    - name: 8080-tcp
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+    - name: 8443-tcp
+      protocol: TCP
+      port: 8443
+      targetPort: 8443
+  type: ClusterIP
+  ipFamilyPolicy: SingleStack
+  sessionAffinity: None
+  selector:
+    app: simple-app
+    deployment: simple-app
