@@ -4,6 +4,13 @@ This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
+## 🚀 OpenShift Dev Spaces
+
+You can open this project directly in [OpenShift Dev Spaces](https://devspaces.apps.rm3.7wse.p1.openshiftapps.com/#https://github.com/slallemand/quarkus-simple-app)  
+Click below to start your workspace:
+
+
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
