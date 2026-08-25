@@ -6,7 +6,7 @@ components:
     container:
       image: registry.redhat.io/devspaces/udi-rhel9@sha256:2708a8082c9c0aa569e31c79695483311cae3533e42b950fd02384b0def75415
       memoryLimit: 4096Mi
-      cpuLimit: 2
+      cpuLimit: '2'
       mountSources: true
       env:
         - name: NODE_TLS_REJECT_UNAUTHORIZED
